@@ -13,7 +13,7 @@
 
 
 
- formValidation = () => {
+ let formValidation = () => {
      if (input.value === "") {
          msg.innerHTML = "Post cannot be blank";
          console.log("failure");
@@ -22,13 +22,23 @@
      }
  };
 
+
+
+
  let data = {};
 
  let acceptData = () => {
      data["text"] = input.value;
-     console.log(data);
      createPost();
  };
+
+
+
+ let deletePost = (e) => {
+     e.parentElement.parentElement.remove();
+
+ };
+
 
  let createPost = () => {
      posts.innerHTML += `
@@ -42,3 +52,8 @@
     `;
      input.value = "";
  };
+
+ let editPost = (e) => {
+     input.value = e.parentElement.previousElementSibling.innerHTML;
+     e.parentElement.parentElement.remove();
+ }
