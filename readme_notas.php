@@ -1,4 +1,9 @@
 20220527
+
+ TUTORIAL 
+
+ Learn CRUD Operations in JavaScript by building TODO APP || JS
+ https://www.youtube.com/watch?v=fL9cts8ykbU&list=PLOIvuivTitrpwyaZTGjej1tQ1lSY5QZKg&index=3&t=2529s
  -- fontawesome.com 
 
 -- la etiqueta script debe ir despues del la etiqueta body 
